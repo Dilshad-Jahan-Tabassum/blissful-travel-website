@@ -97,6 +97,7 @@
     background: rgba(255, 255, 255, 0.30);
     margin-top: 50px;
     margin-left: 185px;
+    width: 750px;
 }
 #when, #type-selection{
     color: rgba(19, 19, 24, 0.50);
@@ -129,6 +130,7 @@
 /* mobile device responsive  */
 
 @media screen and (max-width:576px) {
+    /* nav section style  */
     .nav-bar{
         display: flex;
         align-items: center;
@@ -140,8 +142,7 @@
     .nav-img{
         display: flex;
         align-items: center;
-        gap: 10px;
-        
+        gap: 10px;    
     }
     .nav-img img{
         width: 35px;
@@ -156,8 +157,87 @@
         display: none;
     }
     .hamburg-icon{
-        margin-left: 120px;
+        margin-left: 110px;
         display: flex;
     }
+
+    /* banner section style  */
+
+    .banner-section{
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .banner{
+        width: 335px;
+        height: 483px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group-13.png');
+        background-repeat: no-repeat;
+    }
+    .banner p{
+        /* display: flex; */
+        /* align-items: center;
+        justify-content: center; */
+        flex-direction: column;
+    }
    
+
+
+    .banner-title{
+        padding-top: 32px;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 800;
+    }
+    .banner-description{
+        color: #FFF;
+        width: 304px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        margin-top: 8px;
+        margin-left: 18px;
+    }
+    .banner .input-field{
+        flex-direction: column;
+        padding: 16px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.30);
+        margin-top: 30px;
+        margin-left: 24px;
+        margin-right: 24px;
+        width: 255px;
+        font-size: 16px;
+    }
+
+    #when, #type-selection{
+        color: rgba(19, 19, 24, 0.50);
+        width: 250px;
+        height: 45px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .banner input{
+        width: 230px;
+        height: 25px;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+    }
+    .btn-field{
+        width: 250px;
+        height: 45px;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;  
+    }
 }
