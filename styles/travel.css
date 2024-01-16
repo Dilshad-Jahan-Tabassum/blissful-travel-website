@@ -157,7 +157,7 @@
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 32px;
+    margin-bottom: 50px;
 }
 .btn-tour{
     color: #FFF;
@@ -173,9 +173,47 @@
     width: 540px;
     height: 550px;
 }
-
-
-
+/* choose destination start  */
+.choose-destination{
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.destination{
+    text-align: center;
+}
+.about-destination{
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-bottom: 48px;
+}
+.row img{
+    width: 100%;
+    height: 100%;
+}
+.row{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.container p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 800;
+}
 /* mobile device responsive  */
 
 @media screen and (max-width:600px) {
@@ -327,11 +365,53 @@
         height: 52px;
         border-radius: 8px;
         border: none;
-        margin-bottom: 24px;
+        margin-bottom: 50px;
     }
     .popular-tours .tour-img{
         width: 335px;
         height: 342px;
     }
-    
+
+    /* choose destination start  */
+    .choose-destination{
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+    .destination{
+        text-align: center;
+        font-size: 20px;
+    }
+    .about-destination{
+        width: 309px;
+        color: rgba(19, 19, 24, 0.70);
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        margin-left: 20px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .row img{
+        width: 335px;
+        height: 176px;
+    }
+    .row{
+       flex-direction: column;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+    .container{
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .container p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: 700;
+    }
 }
