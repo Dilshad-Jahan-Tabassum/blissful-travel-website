@@ -10,6 +10,9 @@
 .shared-color{
     color: #FF5400;
 }
+.btn-shared-color{
+    background-color: #FF5400;
+}
 
 /* nav section start  */
 .nav-bar{
@@ -33,7 +36,6 @@
 .nav-img p{
     /* margin-left: 15px; */
     color: #131318;
-    font-family: Mulish;
     font-size: 36px;
     font-weight: 800;
 }
@@ -46,19 +48,87 @@
     align-items: center;
     justify-content: center;
     /* text-align: center; */
-    font-family: Mulish;
     font-size: 18px;
     font-weight: 400;
     padding: 20px;
 }
 
 /* banner section start  */
-
+.banner-section{
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.banner{
+    width: 1170px;
+    height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group-13.png');
+    background-repeat: no-repeat;
+}
+.banner p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner-title{
+    padding-top: 100px;
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+.banner-description{
+    color: #FFF;
+    width: 676px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-top: 24px;
+    margin-left: 240px;
+}
+.banner .input-field{
+    display: flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 50px;
+    margin-left: 185px;
+}
+#when, #type-selection{
+    color: rgba(19, 19, 24, 0.50);
+    width: 174px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 8px;
+}
+.banner input{
+    width: 170px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+.btn-field{
+    width: 170px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;  
+}
 
 
 
 /* mobile device responsive  */
-@media screen and (max-width:576px){
+
+@media screen and (max-width:576px) {
     .nav-bar{
         display: flex;
         align-items: center;
@@ -79,7 +149,6 @@
     }
     .nav-img p{
         color: #131318;
-        font-family: Mulish;
         font-size: 21.543px;
         font-weight: 800;
     }
