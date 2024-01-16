@@ -1,0 +1,94 @@
+/* Mulish font style  */
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap');
+
+  /* shared items on webpage  */
+*{
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.shared-color{
+    color: #FF5400;
+}
+
+/* nav section start  */
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.nav-img{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+.nav-img img{
+    width: 60px;
+    height: 56px;
+}
+.nav-img p{
+    /* margin-left: 15px; */
+    color: #131318;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
+}
+.hamburg-icon{
+    display: none;
+}
+.menu-items a{
+    text-decoration: none;
+    color:#424247;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+/* banner section start  */
+
+
+
+
+/* mobile device responsive  */
+@media screen and (max-width:576px){
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-img{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .nav-img img{
+        width: 35px;
+        height: 33.516px;
+    }
+    .nav-img p{
+        color: #131318;
+        font-family: Mulish;
+        font-size: 21.543px;
+        font-weight: 800;
+    }
+    .menu-items a{
+        display: none;
+    }
+    .hamburg-icon{
+        margin-left: 120px;
+        display: flex;
+    }
+   
+}
