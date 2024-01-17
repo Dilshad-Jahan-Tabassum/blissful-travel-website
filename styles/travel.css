@@ -214,6 +214,68 @@
     font-size: 28px;
     font-weight: 800;
 }
+
+/* choose us section  */
+.choose-us-section{
+    margin-top: 100px;
+}
+.card-section{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.box-1{
+    width: 500px;
+    height: 220px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 30px;
+    /* padding-top: 32px; */
+}
+.box-title{
+    margin-top: 25px;
+    margin-bottom: 16px;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.box-description{
+    width: 486px;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+.box-2{
+    width: 500px;
+    height: 220px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 30px;
+    /* padding-top: 32px; */
+}
+.box{
+    display: flex;
+    gap:24px;
+}
+.center-box{
+    margin: auto;
+    width: 50%;
+}
+.box-3{
+    margin-top: 24px;
+    /* margin-left: 433px;
+    margin-right: 433px; */
+    width: 500px;
+    height: 220px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    padding: 30px;
+    /* padding-top: 32px; */
+}
+
 /* mobile device responsive  */
 
 @media screen and (max-width:600px) {
@@ -414,4 +476,62 @@
         font-size: 20px;
         font-weight: 700;
     }
+    /* choose us section  */
+    .choose-us-section{
+        margin-top: 24px;
+    }
+    .card-section{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .box-1{
+        width: 280px;
+        height: 220px;
+        border-radius: 16px;
+        border: 1px solid rgba(251, 181, 99, 0.20);
+        background: rgba(251, 181, 99, 0.05);
+        padding: 32px;
+      
+    }
+    .box-title{
+        margin-top: 16px;
+        margin-bottom: 12px;
+        color: #131318;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .box-description{
+        width: 260px;
+        color: #5A5A5D;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .box-2{
+        width: 280px;
+        height: 220px;
+        border-radius: 16px;
+        border: 1px solid rgba(41, 206, 246, 0.20);
+        background: rgba(41, 206, 246, 0.05);
+        padding: 32px;
+   
+    }
+    .box{
+        flex-direction: column;
+        gap:16px;
+    }
+    .center-box{
+        margin: auto;
+        width: 100%;
+    }
+    .box-3{
+        margin-top: 16px;
+        width: 280px;
+        height: 220px;
+        border-radius: 16px;
+        border: 1px solid rgba(233, 68, 68, 0.20);
+        background: rgba(233, 68, 68, 0.05);
+        padding: 32px;    
+    }
+    
 }
