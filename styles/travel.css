@@ -444,8 +444,7 @@ footer hr{
 
     /* nav section style  */
     .nav-bar{
-        display: flex;
-        align-items: center;
+       
         margin-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
