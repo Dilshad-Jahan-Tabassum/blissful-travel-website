@@ -6,6 +6,10 @@
     font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
+   
+}
+body{
+    overflow-x: hidden;
 }
 .shared-color{
     color: #FF5400;
@@ -188,7 +192,7 @@
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    margin-left: 390px;
+    margin-left: 300px;
     margin-top: 20px;
     margin-bottom: 48px;
 }
@@ -274,6 +278,30 @@
     /* padding-top: 32px; */
 }
 
+/* about us section  */
+.about-us{
+    background-color: rgba(233, 68, 68, 0.05);
+    margin-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 500px;
+    /* width: 1170px; */
+    padding: 40px;
+}
+.building{
+
+    margin-left: 425px;
+    margin-bottom: 15px;
+    width: 300px;
+    /* height: 250px; */
+    /* border-radius: 50%; */
+}
+.about-us-description{
+    margin-top: 15px;
+    text-align: center;
+    width: 573px;
+    margin-left: 300px;
+}
 /* newsletter section  */
 .newsletter-section{
     margin-top: 100px;
@@ -341,9 +369,50 @@ hr{
 font-size: 32px;
 font-weight: 800;
 }
+
+/* footer section  */
+footer{
+    width: 1440px;
+height: 502px;
+background: rgba(19, 19, 24, 0.05);
+}
+.footer-div{
+    padding-top: 110px;
+    justify-content: center;
+}
+.footer-description{
+    margin-top: 15px;
+    margin-bottom: 32px;
+    width: 769px;
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 335px;
+}
+.footer-icon{
+    text-align: center;
+}
+.footer-icon i{
+    padding: 15px;
+    margin-bottom: 30px;
+}
+footer hr{
+    width: 872px;
+    height: 1px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+.copy-right{
+    text-align: center;
+}
+
 /* mobile device responsive  */
 
 @media screen and (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
     /* nav section style  */
     .nav-bar{
         display: flex;
@@ -515,7 +584,7 @@ font-weight: 800;
         text-align: center;
         font-size: 14px;
         font-weight: 400;
-        margin-left: 20px;
+        margin-left: 25px;
         margin-top: 16px;
         margin-bottom: 16px;
     }
@@ -599,6 +668,31 @@ font-weight: 800;
         padding: 32px;    
     }
 
+
+/* about us section  */
+.about-us{
+    background-color: rgba(233, 68, 68, 0.05);
+    margin-top: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 16px;
+}
+.building{
+
+    margin-left: 50px;
+    margin-bottom: 15px;
+    width: 200px;
+    /* height: 250px; */
+    /* border-radius: 50%; */
+}
+.about-us-description{
+    margin-top: 15px;
+    text-align: center;
+    width: 300px;
+    margin-left: 5px;
+}    
     /* newsletter section  */
 .newsletter-section{
     margin-top: 24px;
@@ -664,6 +758,46 @@ hr{
     color: #FFF;
     font-size: 21.138px;
     font-weight: 800;
+}
+
+/* footer section  */
+footer{
+   
+    width: 390px;
+    height: 309px;
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-div{
+    padding-top: 30px;
+    justify-content: center;
+}
+.footer-description{
+    margin-top: 16px;
+    margin-bottom: 14px;
+    width: 300px;
+    color: #5A5A5D; 
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 44px;
+    /* margin-right: 44px; */
+
+}
+.footer-icon{
+    text-align: center;
+
+}
+.footer-icon i{
+    padding: 15px;
+    margin-bottom: 24px;
+}
+footer hr{
+    width: 335px;
+    height: 1px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.copy-right{
+    text-align: center;
 }
     
 }
