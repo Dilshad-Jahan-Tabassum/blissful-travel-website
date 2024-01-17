@@ -93,7 +93,6 @@
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px; /* 162.5% */
     margin-top: 24px;
     margin-left: 240px;
 }
@@ -278,36 +277,12 @@
     /* padding-top: 32px; */
 }
 
-/* about us section  */
-.about-us{
-    background-color: rgba(233, 68, 68, 0.05);
-    margin-top: 100px;
-    margin-left: 80px;
-    margin-right: 80px;
-    height: 500px;
-    /* width: 1170px; */
-    padding: 40px;
-}
-.building{
-
-    margin-left: 425px;
-    margin-bottom: 15px;
-    width: 300px;
-    /* height: 250px; */
-    /* border-radius: 50%; */
-}
-.about-us-description{
-    margin-top: 15px;
-    text-align: center;
-    width: 573px;
-    margin-left: 300px;
-}
 /* newsletter section  */
 .newsletter-section{
     margin-top: 100px;
     margin-left: 80px;
     display: flex;
-    gap: 24px;
+    gap: 24px; 
 }
 .subscribe-part{
     border-radius: 16px;
@@ -315,6 +290,7 @@
     width: 434px;
     height: 370px;
     padding: 40px;
+    
 }
 .newsletter-title{
     color: #131318;
@@ -349,32 +325,73 @@ hr{
 .discount-img{
     width: 672px;
     height: 453px;
+   
 }
-.save-money{
-    width: 300px;
-    height: 120px;
-    transform: rotate(-19.628deg) translateX(382px) translateY(-72px);
+.parent-div{
+    position: relative;
+}
+.child-div-1{
+    position: relative;
+    z-index: 0;
+}
+.child-div-2{
+    position: absolute;
+    z-index: 1;
+    background-color: #FF5400;
+    bottom: 20%;
+    left: 70%;
     border-radius: 16px;
-}
-.save-money .travel-page{
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding: 10px;
     color: #FFF;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 400;
+    text-align:center;
+    width: 200px;
+    transform: rotate(-19.628deg) translateY(40px) translateX(-35px);
 }
-.save-money .save-up{
-    color: #FFF;
-font-size: 32px;
-font-weight: 800;
+
+
+/* bonus section start  */
+.bonus-section{
+    margin-top: 100px;
+    margin-left: 80px;
+    height: 800px;
+    /* border: 1px solid saddlebrown; */
+} 
+ .agra-abroad{
+    width: 550px;
+    height: 800px;
 }
+.bonus-div{
+    padding: 35px;
+    background-color: bisque;
+    width: 500px;
+    height: 520px;
+    transform: translateX(500px) translateY(-700px);
+}
+.about-us{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    margin-bottom: 18px;
+    color: rgba(19, 19, 24, 0.10);
+}
+.bonus-title{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.bonus-description{
+    margin-bottom: 24px;
+    font-size: 16px;
+    color: #5A5A5D;
+}
+
 
 /* footer section  */
 footer{
-    width: 1440px;
-height: 502px;
-background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+    width: 1348px;
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
 }
 .footer-div{
     padding-top: 110px;
@@ -407,39 +424,41 @@ footer hr{
     text-align: center;
 }
 
+
+
 /* mobile device responsive  */
 
 @media screen and (max-width:600px) {
-    html,
+    /* html,
     body{
       width:100%;
       height:100%;
       margin:0;
       padding:0;
       overflow-x: hidden;
+    } */
+
+    .shared-title{
+        font-size: 20px;  
     }
+
     /* nav section style  */
     .nav-bar{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .nav-img{
-        display: flex;
-        align-items: center;
+    .nav-img{      
         gap: 10px;    
     }
     .nav-img img{
         width: 35px;
         height: 33.516px;
     }
-    .nav-img p{
-        color: #131318;
+    .nav-img p{  
         font-size: 21.543px;
-        font-weight: 800;
     }
     .menu-items a{
         display: none;
@@ -454,45 +473,29 @@ footer hr{
     .banner-section{
         margin-top: 20px;
         margin-left: 20px;
-        /* margin-right: 20px; */
+        margin-right: 20px;
     }
     .banner{
         width: 345px;
         height: 483px;
-        border-radius: 16px;
-        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('../Images/Group-13.png');
-        background-repeat: no-repeat;
     }
     .banner p{
-        /* display: flex; */
-        /* align-items: center;
-        justify-content: center; */
         flex-direction: column;
     }
     .banner-title{
-        padding-top: 32px;
-        color: #FFF;
-        font-size: 22px;
-        font-weight: 800;
+        padding-top: 32px;  
+        font-size: 22px;    
     }
     .banner-description{
-        color: #FFF;
-        width: 304px;
-        text-align: center;
+        width: 304px;     
         font-size: 14px;
-        font-weight: 400;
-        line-height: 26px; /* 162.5% */
         margin-top: 8px;
         margin-left: 18px;
     }
     .banner .input-field{
         flex-direction: column;
-        padding: 16px;
         justify-content: center;
-        align-items: flex-start;
         gap: 16px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.30);
         margin-top: 30px;
         margin-left: 24px;
         margin-right: 24px;
@@ -500,34 +503,16 @@ footer hr{
         font-size: 16px;
     }
 
-    #when, #type-selection{
-        color: rgba(19, 19, 24, 0.50);
+    #when, #type-selection{     
         width: 267px;
-        height: 45px;
-        padding: 8px;
-        border-radius: 8px;
     }
     .banner input{
         width: 245px;
-        height: 25px;
-        padding: 10px;
-        border-radius: 8px;
-        border: none;
     }
     .btn-field{
-        width: 267px;
-        height: 45px;
-        padding: 10px;
-        border-radius: 8px;
-        border: none;
-        color: #FFF;
-        font-size: 16px;
-        font-weight: 700;
-        text-align: center;  
+        width: 267px; 
     }
-   /* .btn-field i{
-    margin-right: 8px;
-   } */
+   
 
     /* popular tour section  */
     .popular-tours{
@@ -538,34 +523,20 @@ footer hr{
     }
     .tour-description{
         width: 335px;
-        margin-top: 16px;
-        color: rgba(19, 19, 24, 0.70);
-        font-size: 14px;
-        font-weight: 400;
+        margin-top: 16px;    
+        font-size: 14px;    
     }
     .list{
        margin-bottom: 12px;
-        margin-left: 20px;
     }
-    .list li{
-        margin-top: 24px;
-    }
+    
     .conclusion{
-        width: 335px;
-        color: #5A5A5D;
+        width: 335px;    
         font-size: 14px;
-        font-weight: 400;
         margin-bottom: 24px;
     }
-    .btn-tour{
-        color: #FFF;
-        text-align: center;
+    .btn-tour{       
         font-size: 20px;
-        font-weight: 800;
-        width: 174px;
-        height: 52px;
-        border-radius: 8px;
-        border: none;
         margin-bottom: 50px;
     }
     .popular-tours .tour-img{
@@ -584,11 +555,9 @@ footer hr{
         font-size: 20px;
     }
     .about-destination{
-        width: 309px;
-        color: rgba(19, 19, 24, 0.70);
+        width: 309px;   
         text-align: center;
         font-size: 14px;
-        font-weight: 400;
         margin-left: 25px;
         margin-top: 16px;
         margin-bottom: 16px;
@@ -601,17 +570,8 @@ footer hr{
        flex-direction: column;
         gap: 16px;
         margin-bottom: 16px;
-    }
-    .container{
-        position: relative;
-        text-align: center;
-        color: white;
-    }
+    }  
     .container p{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         font-size: 20px;
         font-weight: 700;
     }
@@ -628,30 +588,21 @@ footer hr{
         width: 280px;
         height: 220px;
         border-radius: 16px;
-        border: 1px solid rgba(251, 181, 99, 0.20);
-        background: rgba(251, 181, 99, 0.05);
         padding: 32px;
       
     }
     .box-title{
         margin-top: 16px;
         margin-bottom: 12px;
-        color: #131318;
         font-size: 20px;
-        font-weight: 800;
     }
     .box-description{
         width: 260px;
-        color: #5A5A5D;
         font-size: 14px;
-        font-weight: 400;
     }
     .box-2{
         width: 280px;
         height: 220px;
-        border-radius: 16px;
-        border: 1px solid rgba(41, 206, 246, 0.20);
-        background: rgba(41, 206, 246, 0.05);
         padding: 32px;
    
     }
@@ -660,61 +611,28 @@ footer hr{
         gap:16px;
     }
     .center-box{
-        margin: auto;
         width: 100%;
     }
     .box-3{
         margin-top: 16px;
         width: 280px;
-        height: 220px;
-        border-radius: 16px;
-        border: 1px solid rgba(233, 68, 68, 0.20);
-        background: rgba(233, 68, 68, 0.05);
         padding: 32px;    
     }
 
-
-/* about us section  */
-.about-us{
-    background-color: rgba(233, 68, 68, 0.05);
-    margin-top: 24px;
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 450px;
-    padding: 20px;
-    border-radius: 16px;
-}
-.building{
-
-    margin-left: 50px;
-    margin-bottom: 15px;
-    width: 200px;
-    /* height: 250px; */
-    /* border-radius: 50%; */
-}
-.about-us-description{
-    margin-top: 15px;
-    text-align: center;
-    width: 300px;
-    margin-left: 5px;
-}    
     /* newsletter section  */
 .newsletter-section{
     margin-top: 24px;
     margin-left: 20px;
     flex-direction: column;
+    
 }
 .subscribe-part{
-    border-radius: 16px;
-    border: 1px solid #FF5400;
     width: 310px;
     height: 340px;
     padding: 20px;
 }
-.newsletter-title{
-    color: #131318;
+.newsletter-title{  
     font-size: 20px;
-    font-weight: 800;
     margin-bottom: 8px;
 }
 .subscribe-description{
@@ -723,17 +641,11 @@ footer hr{
 }
 hr{
     width: 300px;
-    height: 1px;
-    background: rgba(19, 19, 24, 0.10);
     margin-bottom: 16px;
 }
 .name-email-field input{
-    border-radius: 8px;
-    background: rgba(19, 19, 24, 0.05);
     width: 288px;
-    height: 52px;
     margin-bottom: 16px;
-    border: none;
     padding-left: 20px;
 }
 .subs-btn{
@@ -744,65 +656,82 @@ hr{
     width: 350px;
     height: 300px;
 }
-.save-money{
-    width: 214px;
-    height: 77px;
-    transform: rotate(-19.628deg) translateX(147px) translateY(-94px);
-    border-radius: 16px;
+.child-div-2{
+    left: 45%;
+    width: 150px;
+    transform: rotate(-19.628deg) translateY(22px);
+}
 
+
+/* bonus section start  */
+.bonus-section{
+    margin-top: 24px;
+    margin-left: 20px;
+    height: 1000px;
+    /* border: 1px solid saddlebrown; */
+} 
+ .agra-abroad{
+    width: 349px;
+    height: 400px;
 }
-.save-money .travel-page{
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: #FFF;
-    text-align: center;
-    font-size: 15.854px;
-    font-weight: 400;
+.bonus-div{
+    padding: 10px;
+    width: 330px;
+    height: 640px;
+    transform: translateY(12px);
 }
-.save-money .save-up{
-    color: #FFF;
-    font-size: 21.138px;
-    font-weight: 800;
+.about-us{
+    font-size: 20px;
+    margin-bottom: 10px;
 }
+.bonus-title{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.bonus-description{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.bonus-btn{
+    margin-left: 30px;
+}
+/* .bonus-img{
+    width: 50%;
+}  */
+
+
+
+.bonus-img{
+    padding-right: 10px;
+}
+
+
 
 /* footer section  */
 footer{
-   
+    margin-top: 100px;
     width: 390px;
     height: 309px;
-    background: rgba(19, 19, 24, 0.05);
+  
 }
 .footer-div{
     padding-top: 30px;
-    justify-content: center;
 }
 .footer-description{
     margin-top: 16px;
     margin-bottom: 14px;
     width: 300px;
-    color: #5A5A5D; 
     font-size: 14px;
-    font-weight: 400;
     margin-left: 44px;
-    /* margin-right: 44px; */
-
-}
-.footer-icon{
-    text-align: center;
 
 }
 .footer-icon i{
-    padding: 15px;
     margin-bottom: 24px;
 }
 footer hr{
-    width: 335px;
-    height: 1px;
-    margin-left: 10px;
+    width: 330px;
+    margin-left: 20px;
     margin-bottom: 20px;
-}
-.copy-right{
-    text-align: center;
 }
     
 }
