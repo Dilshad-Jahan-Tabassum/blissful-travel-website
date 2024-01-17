@@ -6,11 +6,11 @@
     font-family: 'Mulish', sans-serif;
     margin: 0;
     padding: 0;
-   
 }
 body{
     overflow-x: hidden;
 }
+
 .shared-color{
     color: #FF5400;
 }
@@ -65,7 +65,7 @@ body{
 /* banner section start  */
 .banner-section{
     margin-top: 50px;
-    margin-left: 80px;
+    margin-left: 85px;
     margin-right: 80px;
 }
 .banner{
@@ -410,8 +410,11 @@ footer hr{
 /* mobile device responsive  */
 
 @media screen and (max-width:600px) {
-    body{
+   html, body{
         overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
     /* nav section style  */
     .nav-bar{
