@@ -325,7 +325,8 @@ hr{
 .save-money{
     width: 300px;
     height: 120px;
-    transform: rotate(-19.628deg) translateX(385px) translateY(-67px);
+    transform: rotate(-19.628deg) translateX(382px) translateY(-72px);
+    border-radius: 16px;
 }
 .save-money .travel-page{
     margin-top: 20px;
@@ -647,10 +648,8 @@ hr{
 .save-money{
     width: 214px;
     height: 77px;
-    transform: rotate(-19.628deg) translateX(147px) translateY(-92px);
-    /* transform:  rotate(-30deg) ; */
-    /* transform: ; */
-    /* transform: translate3d(400px 200px 100px); */
+    transform: rotate(-19.628deg) translateX(147px) translateY(-94px);
+    border-radius: 16px;
 
 }
 .save-money .travel-page{
